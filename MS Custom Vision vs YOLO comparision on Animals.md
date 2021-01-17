@@ -1,18 +1,19 @@
 # Porównanie MS Custom Vision i YOLO na przykładach zwierząt
 ---
 ## Wnioski ogólne
-Oba programy mają różny czas wykonywania i porównywanie ich jest mało praktyczne - MS CV działą na serwerze a YOLO jest wykonywane na maszynie lokalnej. Dodatkowo model YOLO uzyskuje do 100 krotnego przyśpieszenia pod warunkiemm że wykożystuje GPU Nvidy - wersja uruchomiona na potrzeby raporu działała na CPU na systemie Linuks.
 
-Wstępna analiza obu programów na prostym przykładzie zwierząt wykazała istotne różnice w ich działaniu. Model MS VC w przytłaczającej większości klasyfikował gatunki zwierząt z pewnością 99%-100% (tylko jeden wynik dla owcy był wyraźnie gorszy - 86%) i zawsze zgodnie z prawdą, natomiomiast model yolo uzyskiwał taki poziom pewności wyraźnie żadziej, dodatkowo zdarzało mu się dokonywać całkowicie błędnych klasyfikacji (z dużą pewnością) oraz nie dokładnych klasyfikacji (wszystkie kurczaki zaklasyfikowane jako 'ptak'). Czasami model UOLO nie był w stanie przypisać żadnego oznaczenia dla zadanego obrazu.
+Oba programy mają różny czas wykonywania i porównywanie ich jest mało praktyczne - MS CV działa na serwerze a YOLO jest wykonywane na maszynie lokalnej. Dodatkowo model YOLO uzyskuje do 100 krotnego przyśpieszenia pod warunkiem że wykorzystuje GPU Nvidy - wersja uruchomiona na potrzeby raportu działała na CPU na systemie Linuks. 
 
-Zaletą modelu YOLO jest z kolei zdolność do wyznaczania obszarów w których znajduje się zaklasyfikowany obiekt. Dodatkowo, model rozpoznaje gdy na obrazie znajduje się wiele zwierząt tego samego rodzaju.
+Wstępna analiza obu programów na prostym przykładzie zwierząt wykazała istotne różnice w ich działaniu. Model MS VC w przytłaczającej większości klasyfikował gatunki zwierząt z pewnością 99%-100% (tylko jeden wynik dla owcy był wyraźnie gorszy - 86%) i zawsze zgodnie z prawdą, natomiast model YOLO uzyskiwał taki poziom pewności wyraźnie rzadziej, dodatkowo zdarzało mu się dokonywać całkowicie błędnych klasyfikacji (z dużą pewnością) oraz nie dokładnych klasyfikacji (wszystkie kurczaki zaklasyfikowane jako 'ptak'). Czasami model UOLO nie był w stanie przypisać żadnego oznaczenia dla zadanego obrazu. 
+
+Zaletą modelu YOLO jest z kolei zdolność do wyznaczania obszarów w których znajduje się zaklasyfikowany obiekt. Dodatkowo, model rozpoznaje gdy na obrazie znajduje się wiele zwierząt tego samego rodzaju. 
 
 ---
 ## Porównanie szczegółowe
 
 Model YOLO wykożystywał ogólne wagi https://pjreddie.com/media/files/yolov3.weights
 
-Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek
+Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek.
 
 ![image info](./img/general.png)
 ---
@@ -27,8 +28,9 @@ Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek
 Przykład obrazu (dog4) który został tak samo dobrze zaklasyfikowany.
 ---
 ### Koty
-![image info](./yolo_animals/results_cat.PNG)
-Jeden z kotów został nierozpoznany przez YOLO
+![image info](./yolo_animals/results_cat.PNG)\
+Jeden z kotów został nierozpoznany przez YOLO\
+ 
 ---
 ### Kury
 ### MS CV
@@ -38,12 +40,14 @@ Jeden z kotów został nierozpoznany przez YOLO
 ![image info](./yolo_animals/results_chicken.PNG)\
 ![image info](./yolo_animals/chicken1.PNG)\
 
-YOLO zaklasyfikował kury kurczaki i koguty jako ptaki - ogólna kategoria.
+YOLO zaklasyfikował kury, kurczaki i koguty jako ptaki - zbyt ogólna kategoria.\
+
 ---
 ### Krowy
 ### MS CV
 ![image info](./img/cow1.png)
 ![image info](./img/cow2.png)
+
 ---
 ### YOLO
 ![image info](./yolo_animals/results_cow.PNG)\
@@ -51,6 +55,7 @@ YOLO zaklasyfikował kury kurczaki i koguty jako ptaki - ogólna kategoria.
 ![image info](./yolo_animals/cow2.PNG)\
 
 Poduszka z obrazem krowy (cow1) została zaklasyfikowana jednocześnie jako krowa i owca przez YOLO. Krowa na obrazie cow2 została przez YOLO zaklasyfikowana jako koń.
+
 ---
 ### Owce
 ### MS CV
@@ -60,18 +65,18 @@ Poduszka z obrazem krowy (cow1) została zaklasyfikowana jednocześnie jako krow
 ![image info](./yolo_animals/sheep1.PNG)\
 
 YOLO nie rozpoznał stada owiec (sheep1) i błędnie zaklasyfikował część obrazu.
+
 ---
 ### Konie
 ### MS CV
-![image info](./img/horse2.png)
 ![image info](./img/horse3.png)
 ---
 ### YOLO
 ![image info](./yolo_animals/results_horse.PNG)\
-![image info](./yolo_animals/horse2.PNG)\
 ![image info](./yolo_animals/horse3.PNG)\
 
 horse3 został zaklasyfikowany jednocześnie jako koń i osoba
+
 ---
 ### Słonie
 ### MS CV
