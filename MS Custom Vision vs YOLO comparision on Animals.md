@@ -16,53 +16,69 @@ Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek
 
 ![image info](./img/general.png)
 ---
-#### Psy
+### Psy
+### MS CV
 ![image info](./img/dog4.png)
-![image info](./yolo_animals/results_dog.PNG)
-![image info](./yolo_animals/dog4.PNG)
+---
+### YOLO
+![image info](./yolo_animals/results_dog.PNG)\
+![image info](./yolo_animals/dog4.PNG)\
 
 Przykład obrazu (dog4) który został tak samo dobrze zaklasyfikowany.
 ---
-#### Koty
-
+### Koty
 ![image info](./yolo_animals/results_cat.PNG)
 Jeden z kotów został nierozpoznany przez YOLO
 ---
-#### Kury
+### Kury
+### MS CV
 ![image info](./img/chicken1.png)
-![image info](./yolo_animals/results_chicken.PNG)
-![image info](./yolo_animals/chicken1.PNG)
+---
+### YOLO
+![image info](./yolo_animals/results_chicken.PNG)\
+![image info](./yolo_animals/chicken1.PNG)\
 
 YOLO zaklasyfikował kury kurczaki i koguty jako ptaki - ogólna kategoria.
 ---
-#### Krowy
+### Krowy
+### MS CV
 ![image info](./img/cow1.png)
 ![image info](./img/cow2.png)
-![image info](./yolo_animals/results_cow.PNG)
-![image info](./yolo_animals/cow1.PNG)
-![image info](./yolo_animals/cow2.PNG)
+---
+### YOLO
+![image info](./yolo_animals/results_cow.PNG)\
+![image info](./yolo_animals/cow1.PNG)\
+![image info](./yolo_animals/cow2.PNG)\
 
 Poduszka z obrazem krowy (cow1) została zaklasyfikowana jednocześnie jako krowa i owca przez YOLO. Krowa na obrazie cow2 została przez YOLO zaklasyfikowana jako koń.
 ---
-#### Owce
+### Owce
+### MS CV
 ![image info](./img/sheep1.png)
-
-![image info](./yolo_animals/sheep1.PNG)
+---
+### YOLO
+![image info](./yolo_animals/sheep1.PNG)\
 
 YOLO nie rozpoznał stada owiec (sheep1) i błędnie zaklasyfikował część obrazu.
 ---
-#### Konie
+### Konie
+### MS CV
 ![image info](./img/horse2.png)
 ![image info](./img/horse3.png)
-![image info](./yolo_animals/results_horse.PNG)
-![image info](./yolo_animals/horse2.PNG)
-![image info](./yolo_animals/horse3.PNG)
+---
+### YOLO
+![image info](./yolo_animals/results_horse.PNG)\
+![image info](./yolo_animals/horse2.PNG)\
+![image info](./yolo_animals/horse3.PNG)\
 
 horse3 został zaklasyfikowany jednocześnie jako koń i osoba
 ---
-#### Słonie
+### Słonie
+### MS CV
 ![image info](./img/elephant2.png)
-![image info](./yolo_animals/results_elephant.PNG)
-![image info](./yolo_animals/elephant2.PNG)
+---
+### YOLO
+![image info](./yolo_animals/results_elephant.PNG)\
+![image info](./yolo_animals/elephant2.PNG)\
 
 Oba modele bardzo dobrze rozpoznały słonie, na obrazie elephant2 YOLO dodatkowo zaznaczył każdego ze słoni odzielnie
