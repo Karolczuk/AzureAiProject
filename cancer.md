@@ -5,7 +5,7 @@
 
 ---
 ## Instrukcja reprodukcji rozwiązania
----
+
 
 
 ## Architektura
