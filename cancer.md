@@ -29,6 +29,19 @@ Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek.
 
 ![image info](./img/cancer_data/cancer3.png)
 
+![image info](./img/cancer_data/cancer5.png)
+
+
+![image info](./img/cancer_data/cancer6.png)
+
+
+![image info](./img/cancer_data/cancer7.png)
+
+
+![image info](./img/cancer_data/cancer8.png)
+
+
+
 ---
 
 
