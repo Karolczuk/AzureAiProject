@@ -1,9 +1,11 @@
 # Porównanie MS Custom Vision i YOLO na przykładach nowotworu mózgu
 ---
+
+
 ## Cel ćwiczenia
 
 
----
+
 ## Instrukcja reprodukcji rozwiązania
 
 ![image info](./img/cancer_data/resource.png)
@@ -19,6 +21,7 @@
 Custom vision
 
 Yolo
+
 ## Porównanie szczegółowe
 
 
