@@ -6,7 +6,10 @@
 ---
 ## Instrukcja reprodukcji rozwiązania
 
+![image info](./img/cancer_data/resource.png)
 
+
+![image info](./img/cancer_data/resource2.png)
 
 ## Architektura
 Custom vision
