@@ -1,5 +1,21 @@
 # Porównanie MS Custom Vision i YOLO na przykładach zwierząt
 ---
+## Cel projektu
+Celem tej pracy jest porównanie modeli MS Custom Vision i YOLO (v3) służących do klasyfikacji obiektów przedstawianych na obrazach. Porównywana była jakość klasyfikacji, różnice w sposobie klasyfikacji oraz łatwość w obsłudze. Przeprowadzone zostały dwa eksperymenty - pierwszy to rozpoznawanie wybranych gatunków zwierząt a drugi to wykrywanie obecności guzów w mózgu.
+
+---
+## Filmy
+
+Model YOLO: https://youtu.be/39f2839Cwrg
+Model MS Custom Vision: 
+
+---
+## Reprodukcja modelu YOLO
+
+Model YOLO działa na każdym systemie operacyjnem, jednak na Linuxie jego instalacja jest znacznie prostrza. Potrzebne plik należy pobrać z oficjalnego tutoriala YOLO: https://pjreddie.com/darknet/yolo/. Są to framework darknet: https://github.com/pjreddie/darknet i wytrenowane wagi modelu: https://pjreddie.com/media/files/yolov3.weights.
+Rozpoznawanie jest uruchamiane poleceniem: ./darknet detect cfg/yolov3.cfg yolov3.weights data/image_name
+
+---
 ## Wnioski ogólne
 
 Oba programy mają różny czas wykonywania i porównywanie ich jest mało praktyczne - MS CV działa na serwerze a YOLO jest wykonywane na maszynie lokalnej. Dodatkowo model YOLO uzyskuje do 100 krotnego przyśpieszenia pod warunkiem że wykorzystuje GPU Nvidy - wersja uruchomiona na potrzeby raportu działała na CPU na systemie Linuks. 
