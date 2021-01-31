@@ -45,10 +45,18 @@ Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek.
 ---
 
 
-### Słonie
+### Brak guza
 ### MS CV
-![image info](./img/elephant2.png)
+![image info](./img/cancer_data/no_tumor1.png)
+
+
+![image info](./img/cancer_data/no_tumor2.png)
+
+![image info](./img/cancer_data/no_tumor3.png)
+
+![image info](./img/cancer_data/no_tumor4.png)
+
+![image info](./img/cancer_data/no_tumor5.png)
+
 ---
-### YOLO
-![image info](./yolo_animals/results_elephant.PNG)\
-![image info](./yolo_animals/elephant2.PNG)
+
