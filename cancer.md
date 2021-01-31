@@ -13,6 +13,13 @@ Aby móc skorzystać z tego modelu do klasyfikacji guzów należało stworzyć w
 
 1. Zaloguj się  do Azure portal https://portal.azure.com/ i stwórz resouce group  </b>
 
+
+
+![image info](./img/cancer_data/resource.png)
+
+
+![image info](./img/cancer_data/resource2.png)
+
 2. Wejdż do portalu usługi Custom Vision : https://www.customvision.ai/ i utwórz nowy projekt.
 
 3. Stwórz tagi: cancer, no_tumor  i dodaj do nich obrazy. Obrazy znajdują się w folderze ./img/cancer. Z folderu należy pobrać i rozpakować, a następnie oznaczyć odpowiednim tagiem obrazy z plików: no_tumor_train.zip , cancer1.zip, cancer2.zip, cancer3.zip.
@@ -21,10 +28,6 @@ Aby móc skorzystać z tego modelu do klasyfikacji guzów należało stworzyć w
 
 5. Po procesie trenowania nalezy przejść do etapu testowania.Model testujemy, klikając na przycisk szybki test i podając zdjęcie, które chcemy sklasyfikować. Obrazy testowe znajdują się w folderze ./img/cancer w  test.zip
 
-![image info](./img/cancer_data/resource.png)
-
-
-![image info](./img/cancer_data/resource2.png)
 
 ## Wnioski ogólne
 W porównaniu do wcześniejszego eksperymentu ze zwierzętami model MS Custom Vison wypadł gorzej - do uzyskania zadowalających rezultatów należało wgrać ponad 2000 obrazów zawierających nowotwór i ponad 300 zdjęć mózgu bez nowotworu (przy mniejszych liczbach zdjęć w zbiorze treningowym przewidywania były niejednoznaczne i nie można było na nich polegać). Dodatkowo model jest mniej pewny niż przy zwierzętach - bardzo popularne są wyniki rzędu 95%. Dodatkowo pierwsze zdjęcie z zbioru testowego nie no_tumor zostało błędnie zaklasyfikowane jako posiadające raka (55,3% cancer). Pokazuje to że model nie jest doskonały i że błędy są możliwe.
