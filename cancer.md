@@ -11,6 +11,10 @@
 
 ![image info](./img/cancer_data/resource2.png)
 
+
+![image info](./img/cancer_data/performance.png)
+
+
 ## Architektura
 Custom vision
 
