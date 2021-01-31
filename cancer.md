@@ -11,6 +11,16 @@ Aby móc skorzystać z tego modelu do klasyfikacji guzów należało stworzyć w
 
 ## Instrukcja reprodukcji rozwiązania MS Custom Vision
 
+1. Zaloguj się  do Azure portal https://portal.azure.com/ i stwórz resouce group  </b>
+
+2. Wejdż do portalu usługi Custom Vision : https://www.customvision.ai/ i utwórz nowy projekt.
+
+3. Stwórz tagi: cancer, no_tumor  i dodaj do nich obrazy. Obrazy znajdują się w folderze ./img/cancer. Z folderu należy pobrać i rozpakować, a następnie oznaczyć odpowiednim tagiem obrazy z plików: no_tumor_train.zip , cancer1.zip, cancer2.zip, cancer3.zip.
+
+4. Wybierz przycisk Trenuj z górnej części strony. 
+
+5. Po procesie trenowania nalezy przejść do etapu testowania.Model testujemy, klikając na przycisk szybki test i podając zdjęcie, które chcemy sklasyfikować. Obrazy testowe znajdują się w folderze ./img/cancer w  test.zip
+
 ![image info](./img/cancer_data/resource.png)
 
 
