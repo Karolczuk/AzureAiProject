@@ -7,7 +7,7 @@ Celem tej pracy jest porównanie modeli MS Custom Vision i YOLO (v3) służącyc
 ## Filmy
 
 Model YOLO: https://youtu.be/39f2839Cwrg
-Model MS Custom Vision: 
+Model MS Custom Vision: https://youtu.be/K8PuZs3XXqU
 
 ---
 ## Reprodukcja modelu YOLO
