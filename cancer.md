@@ -23,4 +23,19 @@ Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek.
 ### Nowotwory
 ### MS CV
 ![image info](./img/cancer_data/cancer1.png)
+
+![image info](./img/cancer_data/cancer2.png)
+
+
+![image info](./img/cancer_data/cancer3.png)
+
 ---
+
+
+### Słonie
+### MS CV
+![image info](./img/elephant2.png)
+---
+### YOLO
+![image info](./yolo_animals/results_elephant.PNG)\
+![image info](./yolo_animals/elephant2.PNG)
