@@ -20,7 +20,7 @@ Model MS VC został wytrenowany przy podaniu po 65 zwierząt na każdy gatunek.
 
 ![image info](./img/general.png)
 ---
-### Psy
+### Nowotwory
 ### MS CV
-![image info](./img/dog4.png)
+![image info](./img/cancer_data/cancer1.png)
 ---
