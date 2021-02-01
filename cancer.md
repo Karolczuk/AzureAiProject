@@ -47,7 +47,7 @@ Yolo - YOLO składa się tylko i wyłącznie z frameworka darknet: https://githu
 ## Porównanie szczegółowe
 
 
-Model MS VC został wytrenowany przy podaniu 2044 obrazów z rakiem i 327 bez raka.
+Model MS VC został wytrenowany przy podaniu 2044 obrazów z rakiem i 327 bez raka, ponieważ zbiór obrazków nowotworów poniżej 2tys. daje bardzo dużo fałszywych wyników. Zostało użytych 327 obrazów bez raka, ponieważ zbiór z którego korzystano zawierał tylko 327 zdjęć bez guza.
 
 ![image info](./img/cancer_data/performance.png)
 ---
@@ -71,7 +71,7 @@ Model MS VC został wytrenowany przy podaniu 2044 obrazów z rakiem i 327 bez ra
 
 ![image info](./img/cancer_data/cancer8.png)
 
-
+Wszystkie zdjęcia zostały prawidłowe sklasyfikowane.
 
 ---
 
@@ -79,7 +79,7 @@ Model MS VC został wytrenowany przy podaniu 2044 obrazów z rakiem i 327 bez ra
 ### Brak guza (zbiór testowy)
 ### MS CV
 ![image info](./img/cancer_data/no_tumor1.png)
-Pomyłka modelu - obraz bez raka został błędnie zaklasyfikowny jako zawierający raka.
+Pomyłka modelu - obraz bez raka został błędnie zaklasyfikowny jako zawierający raka. 
 
 ![image info](./img/cancer_data/no_tumor2.png)
 
