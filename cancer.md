@@ -37,6 +37,8 @@ Model YOLO okazał się zbyt trudny w realizacji - jedyny wniosek jest taki że 
 
 ## Architektura
 Custom vision
+Projekt został stworzony w https://www.customvision.ai/.
+
 
 Yolo - YOLO składa się tylko i wyłącznie z frameworka darknet: https://github.com/pjreddie/darknet
 
