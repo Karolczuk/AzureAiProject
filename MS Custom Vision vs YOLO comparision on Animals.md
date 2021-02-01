@@ -16,6 +16,22 @@ Model YOLO działa na każdym systemie operacyjnem, jednak na Linuxie jego insta
 Rozpoznawanie jest uruchamiane poleceniem: ./darknet detect cfg/yolov3.cfg yolov3.weights data/image_name
 
 ---
+
+## Reprodukcja Custom Vision
+
+
+1. Zaloguj się  do Azure portal https://portal.azure.com/ i stwórz resouce group  </b>
+
+2. Wejdż do portalu usługi Custom Vision : https://www.customvision.ai/ i utwórz nowy projekt.
+
+3. Stwórz tagi: dog, cat, elephant, sheep, chicken, cow, horse, squirre i dodaj do nich obrazy. Obrazy znajdują się w folderze .img/animals w animals_train.zip
+
+4. Wybierz przycisk Trenuj z górnej części strony. 
+
+5. Po procesie trenowania nalezy przejść do etapu testowania.Model testujemy, klikając na przycisk szybki test i podając zdjęcie, które chcemy sklasyfikować. Obrazy testowe znajdują się w folderze ./img/animals/ w  animals_test.zip
+
+---
+
 ## Wnioski ogólne
 
 Oba programy mają różny czas wykonywania i porównywanie ich jest mało praktyczne - MS CV działa na serwerze a YOLO jest wykonywane na maszynie lokalnej. Dodatkowo model YOLO uzyskuje do 100 krotnego przyśpieszenia pod warunkiem że wykorzystuje GPU Nvidy - wersja uruchomiona na potrzeby raportu działała na CPU na systemie Linuks. 
